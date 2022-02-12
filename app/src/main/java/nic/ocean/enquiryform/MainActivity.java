@@ -64,13 +64,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (view.getId()){
             case R.id.btnSubmitForm:
 
-
                 fname = binding.etFirstName.getText().toString();
                 lname = binding.etLastName.getText().toString();
                 email = binding.etEmail.getText().toString();
                 conNum = binding.etPhoneNum.getText().toString();
-
-
 
                 if (TextUtils.isEmpty(binding.etFirstName.getText())){
                     binding.etFirstName.setError("PLEASE ENTER FIRST NAME");
@@ -96,6 +93,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 else if (fname != null || lname != null || email != null || conNum != null || gender != null || cbItemsText != null) {
 
+                    binding.btnSubmitForm.setVisibility(View.GONE);
                     binding.linearLayoutFormView.setVisibility(View.VISIBLE);
                     binding.btnReset.setVisibility(View.VISIBLE);
 
