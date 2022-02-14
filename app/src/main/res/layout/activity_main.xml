@@ -68,7 +68,7 @@
 
             <TextView
                 android:id="@+id/tvSelectGender"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Select your gender"
                 android:textAlignment="center"
@@ -76,6 +76,7 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size"
                 android:textStyle="bold"
+                android:background="#B9F6CA"
                 android:layout_margin="20dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -119,6 +120,7 @@
                 android:text="SELECT COURSE"
                 android:textAlignment="center"
                 android:textAllCaps="true"
+                android:background="#B9F6CA"
                 android:textColor="@color/black"
                 android:textSize="@dimen/text_size"
                 android:textStyle="bold"
@@ -143,7 +145,7 @@
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/cbCourse1"
+                        android:id="@+id/cb_java"
                         android:text="JAVA"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -152,7 +154,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse2"
+                        android:id="@+id/cb_android"
                         android:text="Android"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -161,7 +163,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse3"
+                        android:id="@+id/cb_python"
                         android:text="pyhton"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -170,7 +172,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse4"
+                        android:id="@+id/cb_cybersecu"
                         android:text="cyber security"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -179,7 +181,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse5"
+                        android:id="@+id/cb_cloud_comp"
                         android:text="cloud computing"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -188,7 +190,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse6"
+                        android:id="@+id/cb_bigdata"
                         android:text="big data"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -205,7 +207,7 @@
                     android:orientation="vertical">
 
                     <CheckBox
-                        android:id="@+id/cbCourse7"
+                        android:id="@+id/cb_devops"
                         android:text="devops"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -214,7 +216,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse8"
+                        android:id="@+id/cb_machine_learning"
                         android:text="machine learning"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -223,7 +225,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse9"
+                        android:id="@+id/cb_frontend_dev"
                         android:text="front-end development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -232,7 +234,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse10"
+                        android:id="@+id/cb_backend_dev"
                         android:text="back-end development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -241,7 +243,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse11"
+                        android:id="@+id/cb_fullstack_dev"
                         android:text="Full Stack Development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -250,7 +252,7 @@
                         android:layout_height="wrap_content" />
 
                     <CheckBox
-                        android:id="@+id/cbCourse12"
+                        android:id="@+id/cb_flutter"
                         android:text="Flutter"
                         android:textAllCaps="true"
                         android:textStyle="bold"
@@ -273,106 +275,150 @@
 
             <LinearLayout
                 android:id="@+id/linearLayout_formView"
-                android:orientation="horizontal"
+                android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:weightSum="3"
                 android:visibility="gone"
+                android:background="#65B9F6CA"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/btnReset">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight=".5"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="name "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
                     android:background="#C5C5A3"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp">
-                    <TextView
-                        android:text="name "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:text="contact number "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:text="email "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:textSize="@dimen/text_size"
-                        android:text="gender "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:textSize="@dimen/text_size"
-                        android:text="interested course "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
-                    android:orientation="vertical"
-                    android:layout_margin="10dp">
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvName"
+                    android:textSize="@dimen/text_size"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <TextView
+                    android:text="contact number "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:background="#C5C5A3"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvContactNum"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:layout_margin="5dp"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
 
-                    <TextView
-                        android:id="@+id/tvName"
-                        android:hint="name "
-                        android:textSize="@dimen/text_size"
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/tvContactNum"
-                        android:hint="contact number "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/tvEmail"
-                        android:hint="email "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/tvGender"
-                        android:hint="gender "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:id="@+id/tvInterestedCourse"
-                        android:hint="interested course "
-                        android:textAlignment="viewStart"
-                        android:textAllCaps="true"
-                        android:textSize="@dimen/text_size"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+
+                <TextView
+                    android:text="email "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:background="#C5C5A3"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:text="gender "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:background="#C5C5A3"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvGender"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <TextView
+                    android:textSize="@dimen/text_size"
+                    android:text="interested course "
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="true"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:background="#C5C5A3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/tvInterestedCourse"
+                    android:textAlignment="viewStart"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
             </LinearLayout>
 
             <Button
