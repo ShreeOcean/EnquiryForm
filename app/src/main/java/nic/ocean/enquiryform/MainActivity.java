@@ -89,7 +89,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
         Log.d("Radio Group Checked Id :", "onCheckedChanged: " + checkedId);
         RadioButton radioButton = findViewById(checkedId);
-        Toast.makeText(context, radioButton.getText().toString(), Toast.LENGTH_SHORT).show();
+        if (radioButton == null)return;
+        //Toast.makeText(context, radioButton.getText().toString(), Toast.LENGTH_SHORT).show();
         gender = radioButton.getText().toString();
     }
 
