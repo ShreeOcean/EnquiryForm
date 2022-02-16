@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         binding.btnSubmitForm.setOnClickListener((View.OnClickListener) this);
         binding.btnReset.setOnClickListener((View.OnClickListener) this);
         //setContentView(R.layout.activity_main);
-//        binding.radioGroupGender.setOnCheckedChangeListener(this);
+        binding.radioGroupGender.setOnCheckedChangeListener(this);
 //        binding.cbCybersecu.setOnCheckedChangeListener(this);
 //        binding.cbJava.setOnCheckedChangeListener(this);
 //        binding.cbAndroid.setOnCheckedChangeListener(this);
