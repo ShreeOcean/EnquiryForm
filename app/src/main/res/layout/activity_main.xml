@@ -164,7 +164,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_python"
-                        android:text="pyhton"
+                        android:text="Python"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -173,7 +173,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_cybersecu"
-                        android:text="cyber security"
+                        android:text="Cyber Security"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -182,7 +182,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_cloud_comp"
-                        android:text="cloud computing"
+                        android:text="Cloud Computing"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -191,7 +191,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_bigdata"
-                        android:text="big data"
+                        android:text=" Big Data"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -217,7 +217,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_machine_learning"
-                        android:text="machine learning"
+                        android:text=" Machine Learning"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -226,7 +226,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_frontend_dev"
-                        android:text="front-end development"
+                        android:text=" Front-end Development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -235,7 +235,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_backend_dev"
-                        android:text="back-end development"
+                        android:text=" Back-end Development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -244,7 +244,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_fullstack_dev"
-                        android:text="Full Stack Development"
+                        android:text=" Full Stack Development"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -253,7 +253,7 @@
 
                     <CheckBox
                         android:id="@+id/cb_flutter"
-                        android:text="Flutter"
+                        android:text=" Flutter"
                         android:textAllCaps="true"
                         android:textStyle="bold"
                         android:textColor="@color/black"
@@ -268,7 +268,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAlignment="center"
-                android:text="Submit Form"
+                android:text=" Submit Form"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
